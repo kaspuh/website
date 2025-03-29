@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crobster.lol - Features | Premium Roblox Cheat</title>
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --card: #1a1a1a;
+            --accent: #7a5af5;
+            --accent-glow: rgba(122, 90, 245, 0.3);
+            --text: #f0f0f0;
+            --text-secondary: #b0b0b0;
+            --danger: #ff4d4d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #2a2a2a;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+        
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #7a5af5, #ca5af5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        .btn {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px var(--accent-glow);
+        }
+        
+        /* FEATURE TABS */
+        .feature-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .tab-btn {
+            background: #252525;
+            border: none;
+            color: var(--text);
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .tab-btn.active {
+            background: var(--accent);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+        
+        .tab-btn:hover:not(.active) {
+            background: #333;
+        }
+        
+        /* FEATURE GRID */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background-color: var(--card);
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #2a2a2a;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: var(--accent);
+        }
+        
+        .feature-card.premium {
+            border: 1px solid var(--accent);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card.premium::after {
+            content: "PREMIUM";
+            position: absolute;
+            top: 10px;
+            right: -25px;
+            background: var(--accent);
+            color: white;
+            padding: 3px 30px;
+            transform: rotate(45deg);
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .feature-icon {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        .feature-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .feature-desc {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+        
+        .feature-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .stat .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+        
+        .stat .indicator.green {
+            background: #2ecc71;
+        }
+        
+        .stat .indicator.red {
+            background: var(--danger);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-secondary);
+            border-top: 1px solid #2a2a2a;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Crobster.lol</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/features">Features</a>
+            <a href="/download">Download</a>
+            <a href="/faq">FAQ</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h1>Unmatched Roblox Cheating</h1>
+        <p class="subtitle">Crobster.lol delivers the most advanced, undetected, and feature-packed cheat for Roblox.</p>
+        <button class="btn">Download Now</button>
+    </section>
+    
+    <section id="features">
+        <div class="feature-tabs">
+            <button class="tab-btn active" onclick="filterFeatures('all')">All Features</button>
+            <button class="tab-btn" onclick="filterFeatures('aimbot')">Aimbot</button>
+            <button class="tab-btn" onclick="filterFeatures('visuals')">Visuals</button>
+            <button class="tab-btn" onclick="filterFeatures('misc')">Misc</button>
+        </div>
+        
+        <div class="features">
+            <!-- AIMBOT FEATURES -->
+            <div class="feature-card" data-category="aimbot">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Silent Aimbot</h3>
+                <p class="feature-desc">Undetectable aim assistance with customizable smoothing, FOV, and bone selection.</p>
+                <div class="feature-stats">
+                    <div class="stat">
+                        <span class="indicator green"></span>
+                        <span>Undetected</span>
+                    </div>
+                    <div class="stat">
+                        <span class="indicator"></span>
+                        <span>0ms Delay</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-card premium" data-category="aimbot">
+                <div class="feature-icon">👁️</div>
+                <h3 class="feature-title">Prediction Aimbot</h3>
+                <p class="feature-desc">Advanced movement prediction for leading shots in fast-paced games.</p>
+                <div class="feature-stats">
+                    <div class="stat">
+                        <span class="indicator green"></span>
+                        <span>AI-Powered</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- VISUALS -->
+            <div class="feature-card" data-category="visuals">
+                <div class="feature-icon">📦</div>
+                <h3 class="feature-title">Box ESP</h3>
+                <p class="feature-desc">See enemy hitboxes through walls with customizable colors and styles.</p>
+                <div class="feature-stats">
+                    <div class="stat">
+                        <span class="indicator green"></span>
+                        <span>Dynamic Sizing</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-card premium" data-category="visuals">
+                <div class="feature-icon">❤️</div>
+                <h3 class="feature-title">Health Bars</h3>
+                <p class="feature-desc">Real-time health monitoring with gradient colors based on remaining HP.</p>
+            </div>
+            
+            <div class="feature-card" data-category="visuals">
+                <div class="feature-icon">👣</div>
+                <h3 class="feature-title">Footstep Tracker</h3>
+                <p class="feature-desc">Visualize enemy footsteps and recent positions.</p>
+            </div>
+            
+            <!-- MISC -->
+            <div class="feature-card premium" data-category="misc">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Speed Hack</h3>
+                <p class="feature-desc">Adjust movement speed without triggering anti-cheat.</p>
+            </div>
+            
+            <div class="feature-card" data-category="misc">
+                <div class="feature-icon">🔄</div>
+                <h3 class="feature-title">Auto-Updater</h3>
+                <p class="feature-desc">Never worry about outdated cheats—updates are delivered automatically.</p>
+            </div>
+            
+            <div class="feature-card premium" data-category="misc">
+                <div class="feature-icon">🛡️</div>
+                <h3 class="feature-title">HWID Spoofer</h3>
+                <p class="feature-desc">Bypass hardware bans with our built-in spoofer.</p>
+                <div class="feature-stats">
+                    <div class="stat">
+                        <span class="indicator"></span>
+                        <span>Requires Restart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 Crobster.lol | Not affiliated with Roblox Corporation</p>
+        <p style="margin-top: 10px; font-size: 14px;">Use at your own risk. No refunds.</p>
+    </footer>
+
+    <script>
+        function filterFeatures(category) {
+            const features = document.querySelectorAll('.feature-card');
+            const tabs = document.querySelectorAll('.tab-btn');
+            
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.textContent.toLowerCase().includes(category)) {
+                    tab.classList.add('active');
+                }
+            });
+            
+            features.forEach(feature => {
+                if (category === 'all' || feature.dataset.category === category) {
+                    feature.style.display = 'block';
+                } else {
+                    feature.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
