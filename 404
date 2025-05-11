@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>CR0BST3R.LOL - #1 ROBLOX H4XX</title>
+<style type="text/css">
+body {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url('http://i.imgur.com/pixelgrid.gif');
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #FF00FF;
+    background-color: #111111;
+}
+
+#header {
+    padding: 10px;
+    background-color: #220022;
+    border-bottom: 3px dashed #FF00FF;
+    text-align: center;
+}
+
+#nav {
+    float: left;
+    width: 150px;
+    padding: 10px;
+    background-color: #111111;
+    border-right: 1px dashed #FF00FF;
+    height: 400px;
+}
+
+#content {
+    margin-left: 170px;
+    padding: 10px;
+}
+
+#footer {
+    clear: both;
+    padding: 10px;
+    background-color: #220022;
+    border-top: 3px dashed #FF00FF;
+    text-align: center;
+    font-size: 10px;
+}
+
+h1 {
+    color: #FF00FF;
+    text-shadow: 0 0 5px #00FF00;
+    font-size: 24px;
+}
+
+h2 {
+    color: #00FFFF;
+    border-bottom: 1px dotted #FF00FF;
+}
+
+a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF00FF;
+    text-decoration: underline;
+}
+
+.marquee {
+    color: #FFFF00;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: #330033;
+    padding: 3px;
+}
+
+.button {
+    display: block;
+    background-color: #330033;
+    color: #00FF00;
+    padding: 3px;
+    margin: 5px 0;
+    border: 1px solid #FF00FF;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #FF00FF;
+    color: #000000;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+    <div id="header">
+        <h1>CR0BST3R.LOL</h1>
+        <div class="marquee">
+            <marquee behavior="scroll" direction="left">::: ULTIMATE ROBLOX H4XX ::: TAYLOR SWIFT HAS CAMEL TOE ::: NO SURVEYS ::: UNDETECTED ::: WORKING 2025 :::</marquee>
+        </div>
+    </div>
+    
+    <div id="nav">
+        <a href="#" class="button">H0ME</a>
+        <a href="download.html" class="button">DOWNL0AD</a>
+        <a href="#" class="button">FEATURES</a>
+        <a href="#" class="button">SCREENS</a>
+        <a href="#" class="button">TUT0RIALS</a>
+        <a href="#" class="button">F0RUMS</a>
+        <a href="#" class="button">STAFF</a>
+    </div>
+    
+    <div id="content">
+        <h2>404 - P4GE N0T F0UND</h2>
+        <p><span class="blink">>>></span> TEH P4GE U R L00K1NG 4 IS G0NE <span class="blink"><<<</span></p>
+        
+        <center>
+            <img src="https://i.imgur.com/ONj2oAM.png" alt="haxx screenshot" />
+            <p><em>"MAYBE IT WAS H4CKED BY SK1DZ??" - xXx_H4X0R_xXx</em></p>
+        </center>
+        
+        <p>P0SSIBLE REASONS:</p>
+        <ul>
+            <li>U TYPED TEH WR0NG URL</li>
+            <li>TEH P4GE WAS DELETED BY FEDS</li>
+            <li>SK1DZ H4CKED OUR SERVERS AGAIN</li>
+            <li>U D0NT H4VE TEH PR0PER H4XX</li>
+        </ul>
+        
+        <p>TRY THESE INSTEAD:</p>
+        <ul>
+            <li><a href="#">G0 B4CK T0 H0ME</a></li>
+            <li><a href="download.html">D0WNL0AD OUR H4XX</a></li>
+            <li><a href="#">C0NTACT STAFF</a></li>
+        </ul>
+        
+        <h2>L4TEST NEWS</h2>
+        <p><strong>[05/11/25]</strong> SORRY 4 TEH 404! WE WORKING ON IT!</p>
+        <p><strong>[05/01/25]</strong> OUR SITE WAS H4CKED BY SK1DZ BUT WE BACK UP NOW!</p>
+    </div>
+    
+    <div id="footer">
+        BEST VIEWED IN INTERNET EXPLORER 6.0 | &copy; 2005-2025 CR0BST3R.LOL | NOT AFFILIATED WITH R0BLOX CORP
+        <br />
+    </div>
+</div>
+</body>
+</html>
